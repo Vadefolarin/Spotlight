@@ -55,6 +55,7 @@ class _SpotlightDemoState extends State<SpotlightDemo> {
                     ),
                   )),
             ),
+            
             // Spotlight effect
             Positioned(
               left: dragGesturePositon.dx,
