@@ -50,12 +50,12 @@ class _SpotlightDemoState extends State<SpotlightDemo> {
                     style: TextStyle(
                       fontSize: 250.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.grey[800],
+                      color: Colors.grey[700],
                       wordSpacing: 20,
                     ),
                   )),
             ),
-            
+
             // Spotlight effect
             Positioned(
               left: dragGesturePositon.dx,
@@ -68,7 +68,7 @@ class _SpotlightDemoState extends State<SpotlightDemo> {
                   color: Colors.transparent,
                   // This part is new, creating the cutout.
                   child: CustomPaint(
-                    size: const Size(200, 200),
+                    size: const Size(400, 400),
                     painter: Hole(),
                   ),
                 ),
@@ -84,8 +84,8 @@ class _SpotlightDemoState extends State<SpotlightDemo> {
 class Hole extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    double radius = 80;
-    double blurRadius = 10;
+    double radius = 100;
+    double blurRadius = 30;
     canvas.drawCircle(
       const Offset(0, -100),
       radius,
