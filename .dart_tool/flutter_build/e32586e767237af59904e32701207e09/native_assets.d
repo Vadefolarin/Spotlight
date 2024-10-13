@@ -1,0 +1,1 @@
+ /Users/mac/Spotlight/.dart_tool/flutter_build/e32586e767237af59904e32701207e09/native_assets.yaml: 
